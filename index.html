@@ -75,8 +75,15 @@
         </div><!-- /.blog-main -->
 
         <div class="col-sm-4 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <img src="assets/learnmore.svg" alt=cta title="Want to learn more about the BrightEdge SEO Platform?" />
+          <div class="sidebar-module">
+            <div class="learn-more">
+            <a type="button" class="learn-more-button trans center-block" data-toggle="modal" data-target="#formModal">
+              <img src="assets/learnmore.svg" alt="cta" title="Want to learn more about the BrightEdge SEO Platform?" />
+<!--               <button type="button" class="learn-more-button trans center-block" data-toggle="modal" data-target="#formModal">
+              </button>
+ -->
+            </a>
+            </div>
             <hr>
             <img src="assets/suggestions.svg" alt=suggestions title="We hold these truths to be self evident" />
           </div>
@@ -93,7 +100,56 @@
         <a href="#">Back to top</a>
       </p>
     </footer>
-
+<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="formModalLabel">Request a Demo</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="first-name" class="control-label">First Name</label>
+            <input type="text" class="form-control" id="first-name" placeholder="John">
+          </div>          
+          <div class="form-group">
+            <label for="last-name" class="control-label">Last Name</label>
+            <input type="text" class="form-control" id="last-name" placeholder="Smith">
+          </div>
+          <div class="form-group">
+            <label for="email-address" class="control-label">Email Address</label>
+             <input type="email" class="form-control" id="email" placeholder="johnsmith@brightedge.com">
+          </div>          
+          <div class="form-group">
+            <label for="email-address" class="control-label">Company</label>
+            <input type="text" class="form-control" id="company" placeholder="BrightEdge">
+          </div>
+          <div class="form-group">
+            <label for="tel" class="control-label">Phone</label>
+            <input type="tel" class="form-control" id="phone" placeholder="(800) 578-8023">
+          </div>
+          <div class="form-group">
+            <label for="revenue" class="control-label">Anuual Revenue</label>
+            <label class="sr-only">Annual Revenue(in dollars)</label>
+            <div class="input-group">
+              <div class="input-group-addon">$</div>
+              <input type="text" class="form-control" id="RevenueAmount" placeholder="Annual Revenue">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="additional-notes" class="control-label">Additional notes</label>
+            <textarea class="form-control" id="message-text" rows="3" placeholder="I would like to request a demo.."></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit Request</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

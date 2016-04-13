@@ -140,17 +140,48 @@ h6, .h6 {
   padding: 0 15px;
   margin: 0 -15px 15px;
 }
-.sidebar-module-inset {
-  /*padding: 15px;*/
-  /*background-color: #f5f5f5;*/
-  /*border-radius: 4px;*/
-}
-.sidebar-module-inset p:last-child,
-.sidebar-module-inset ul:last-child,
-.sidebar-module-inset ol:last-child {
-  margin-bottom: 0;
-}
+/*.learn-more {
+  position: relative;
+  width: 100%;
+}*/
+/*.learn-more-button {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2.4rem;
+  width: 23.5rem;
+  height: 3.6rem;
+  background-image: url("assets/button.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-width: 1px
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; 
+}*/
 
+/*
+ * button
+ */
+.trans {
+  overflow: hidden;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.center-block:hover,
+.center-block:active,
+.center-block.active,
+.center-block:focus,
+.center-block:active:focus,
+.center-block.active:focus {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.55);
+}
 
 /* Pagination */
 .pager {
