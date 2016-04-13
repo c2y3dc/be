@@ -140,24 +140,24 @@ h6, .h6 {
   padding: 0 15px;
   margin: 0 -15px 15px;
 }
-/*.learn-more {
+.learn-more {
   position: relative;
   width: 100%;
-}*/
-/*.learn-more-button {
+}
+.learn-more-button {
   position: absolute;
   bottom: 2.5rem;
   left: 2.4rem;
   width: 23.5rem;
   height: 3.6rem;
-  background-image: url("assets/button.svg");
-  background-size: 100%;
+  /*background-image: url("assets/button.svg");*/
+  /*background-size: 100%;*/
   background-repeat: no-repeat;
   border-width: 1px
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px; 
-}*/
+}
 
 /*
  * button
