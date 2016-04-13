@@ -73,37 +73,6 @@ h6, .h6 {
   z-index: 1;
 }
 
-@media (max-width: 979px) {
-  #header .region-header .be-logo-wrapper {
-    /*margin-left:5px;*/
-    position: absolute;
-    top: 12px;
-    width: initial;
-  }
-}
-
-@media (max-width: 767px) {
-  #header .region-header .be-logo-wrapper {
-    left:0;
-    margin: auto;
-    padding-right: 0;
-    right: 0;
-    width: 147px;
-  }
-}
-
-#header .region-header .be-logo-wrapper .be-logo img {
-  height: 24px;
-  width: 147px;
-}
-
-@media (min-width: 980px) {
-  #header .region-header .be-logo-wrapper .be-logo img {
-    position:relative;
-    top: 1px;
-  }
-}
-
 
 /*
  * Blog name and description
@@ -150,17 +119,17 @@ h6, .h6 {
 }
 .learn-more {
   position: relative;
-  width: 100%;
+  background: url("../assets/learnmore.svg") 50% no-repeat;
+  /*background-size: cover;*/
+  height: 17rem;
 }
-.learn-more-button {
+
+.learn-more > button {
   position: absolute;
+  left: 2.5rem;
   bottom: 2.5rem;
-  left: 2.4rem;
   width: 23.5rem;
   height: 3.6rem;
-  /*background-image: url("../assets/button.svg");*/
-  /*background-size: 100%;*/
-  background-repeat: no-repeat;
   border-width: 1px
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -234,4 +203,62 @@ h6, .h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+@media (max-width: 979px) {
+  #header .region-header .be-logo-wrapper {
+    /*margin-left:5px;*/
+    position: absolute;
+    top: 12px;
+    width: initial;
+  }
+  .learn-more > button {
+    position: absolute;
+    bottom: 3.5rem;
+    left: 3rem;
+    width: 15rem;
+    height: 2.6rem;
+    border-width: 1px
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+  }
+}
+
+@media (max-width: 767px) {
+  #header .region-header .be-logo-wrapper {
+    left:0;
+    margin: auto;
+    padding-right: 0;
+    right: 0;
+    width: 147px;
+  }
+  .learn-more {
+    position: relative;
+    background: url("../assets/learnmore.svg") 50% no-repeat;
+    background-size: cover;
+    height: 30rem;
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+  .learn-more > button {
+    margin-left: 15%;
+    width: 60%;
+    height: 2.6rem;
+    border-width: 1px
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px; 
+  }
+}
+
+#header .region-header .be-logo-wrapper .be-logo img {
+  height: 24px;
+  width: 147px;
+}
+
+@media (min-width: 980px) {
+  #header .region-header .be-logo-wrapper .be-logo img {
+    position:relative;
+    top: 1px;
+  }
 }
