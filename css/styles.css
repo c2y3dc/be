@@ -1,9 +1,13 @@
 /*
  * Globals
  */
+@font-face {
+    font-family: uLT;
+    src: url(../assets/UniversLTStd-Light.otf);
+}
 
 body {
-  /*font-family: Georgia, "Times New Roman", Times, serif;*/
+  font-family: "uLT", Helvetica, Arial, sans-serif;
   color: #555;
 }
 
@@ -14,7 +18,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "uLT", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #333;
 }
@@ -40,64 +44,64 @@ h6, .h6 {
  */
 
 #header {
-    background: -webkit-linear-gradient(top, #009dda 88%, #0974A1);
-    height: 48px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+  background: -webkit-linear-gradient(top, #009dda 88%, #0974A1);
+  height: 48px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 
 #header .region-header > .inner {
-    margin-left: 0px;
-    margin-right: 0px;
-    max-width: 1200px;
-    position: relative;
-    height: 48px;
-    padding: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  max-width: 1200px;
+  position: relative;
+  height: 48px;
+  padding: 10px;
 }
 
 #header .region-header {
-    position: relative;
+  position: relative;
 }
 
 #header .region-header .be-logo-wrapper {
-    float: left;
-    margin-bottom: 0;
-    padding-right: 26px;
-    z-index: 1;
+  float: left;
+  margin-bottom: 0;
+  padding-right: 26px;
+  z-index: 1;
 }
 
 @media (max-width: 979px) {
-    #header .region-header .be-logo-wrapper {
-        /*margin-left:5px;*/
-        position: absolute;
-        top: 12px;
-        width: initial;
-    }
+  #header .region-header .be-logo-wrapper {
+    /*margin-left:5px;*/
+    position: absolute;
+    top: 12px;
+    width: initial;
+  }
 }
 
 @media (max-width: 767px) {
-    #header .region-header .be-logo-wrapper {
-        left:0;
-        margin: auto;
-        padding-right: 0;
-        right: 0;
-        width: 147px;
-    }
+  #header .region-header .be-logo-wrapper {
+    left:0;
+    margin: auto;
+    padding-right: 0;
+    right: 0;
+    width: 147px;
+  }
 }
 
 #header .region-header .be-logo-wrapper .be-logo img {
-    height: 24px;
-    width: 147px;
+  height: 24px;
+  width: 147px;
 }
 
 @media (min-width: 980px) {
-    #header .region-header .be-logo-wrapper .be-logo img {
-        position:relative;
-        top: 1px;
-    }
+  #header .region-header .be-logo-wrapper .be-logo img {
+    position:relative;
+    top: 1px;
+  }
 }
 
 
@@ -114,6 +118,10 @@ h6, .h6 {
   box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white, 4px 0 4px -4px rgba(0, 0, 0, 0.4), -4px 0 4px -4px rgba(0, 0, 0, 0.4);
   /*margin: 0 auto;*/
 }
+.blog-post-title {
+  font-size: 20px;
+}
+
 .banner {
   margin: 0 auto;
   max-width: 800px;
@@ -140,24 +148,24 @@ h6, .h6 {
   padding: 0 15px;
   margin: 0 -15px 15px;
 }
-/*.learn-more {
+.learn-more {
   position: relative;
   width: 100%;
-}*/
-/*.learn-more-button {
+}
+.learn-more-button {
   position: absolute;
   bottom: 2.5rem;
   left: 2.4rem;
   width: 23.5rem;
   height: 3.6rem;
-  background-image: url("assets/button.svg");
-  background-size: 100%;
+  /*background-image: url("../assets/button.svg");*/
+  /*background-size: 100%;*/
   background-repeat: no-repeat;
   border-width: 1px
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px; 
-}*/
+}
 
 /*
  * button
@@ -204,14 +212,13 @@ h6, .h6 {
   margin-bottom: 60px;
 }
 .blog-post-title {
-  margin-bottom: 25px;
-}
-.blog-post-meta {
-  margin-bottom: 20px;
-  color: #999;
+  margin-bottom: 15px;
 }
 .content{
   margin: 0 .5rem;
+}
+.content > p > a {
+  color: #0088FF;
 }
 
 /*
