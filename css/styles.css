@@ -6,6 +6,15 @@
     src: url(../assets/UniversLTStd-Light.otf);
 }
 
+@font-face {
+    font-family: uLTBold;
+    src: url(../assets/UniversLTStd-BoldCn.otf);
+}
+@font-face {
+    font-family: uLTCn;
+    src: url(../assets/UniversLTStd-LightCn.otf);
+}
+
 body {
   font-family: "uLT", Helvetica, Arial, sans-serif;
   color: #555;
@@ -124,7 +133,20 @@ h6, .h6 {
   height: 17rem;
 }
 
+.learn-more > p {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "uLTCn";
+}
+
 .learn-more > button {
+  font-size: 3.5rem;
+  text-shadow: 0 2px 2px #EC8A00;
+  color: white;
+  font-style: bold;
+  font-family: "uLT";
+  font-weight: 900;
   position: absolute;
   left: 2.5rem;
   bottom: 2.5rem;
@@ -133,7 +155,11 @@ h6, .h6 {
   border-width: 1px
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  border-radius: 3px; 
+  border-radius: 3px;
+  font-family: "uLT", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 200;
+  background: -webkit-linear-gradient(top, #FFC956 50%, #EC8A00);
 }
 
 /*
@@ -211,7 +237,13 @@ h6, .h6 {
     top: 12px;
     width: initial;
   }
+  .learn-more > p {
+    padding-top: 4.5rem;
+    font-size: 1.5rem;
+  }
   .learn-more > button {
+    font-size: 1.5rem;
+    text-shadow: 0 2px 2px #EC8A00;
     position: absolute;
     bottom: 3.5rem;
     left: 3rem;
@@ -240,10 +272,17 @@ h6, .h6 {
     max-width: 100rem;
     margin: 0 auto;
   }
+  .learn-more > p {
+    padding-top: 5rem;
+    font-size: 4rem;
+  }
+
   .learn-more > button {
+    bottom: 5rem;
+    font-size: 2.5rem;
     margin-left: 15%;
     width: 60%;
-    height: 2.6rem;
+    height: 3rem;
     border-width: 1px
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
